@@ -3,6 +3,7 @@ import Inputfield from "../../components/Elements/Inputfield";
 import HeadingParagraph from "../../components/Elements/HeadingParagraph";
 import Common from "../../components/Common/Common";
 import Button from "../../components/Elements/Button";
+import { Link } from "react-router-dom";
 const Login = () => {
 	return (
 		<>
@@ -35,12 +36,12 @@ const Login = () => {
 						<Button button="Sign in" />
 						<p className=" text-center text-base font-normal mt-3 ">
 							New on our platform?
-							<a
+							<Link
 								className="text-[#696CFF] hover:text-[#788FFF] text-base	font-normal ml-1"
-								href="#"
+								to="/signup"
 							>
 								Create an account
-							</a>
+							</Link>
 						</p>
 					</div>
 				</div>

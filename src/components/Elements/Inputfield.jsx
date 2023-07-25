@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 const Inputfield = (props) => {
-	console.log(props);
 	return (
 		<>
 			<label className="text-xs font-medium" htmlFor={props.htmlFor}>

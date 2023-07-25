@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Eye, slashEye } from "../../assets/images";
+import { Link } from "react-router-dom";
 const Common = (props) => {
 	const [togglePassoword, setTogglePassword] = useState(true);
 	return (
@@ -9,12 +10,12 @@ const Common = (props) => {
 				<label className="text-xs font-medium" htmlFor="password">
 					PASSWORD
 				</label>
-				<a
+				<Link
 					className="text-[#696CFF] hover:text-[#788FFF] text-xs font-normal"
-					href="#"
+					to="/forgotpassword"
 				>
 					{props.forgot}
-				</a>
+				</Link>
 			</div>
 			<div className="relative mt-3 mb-3">
 				<img
