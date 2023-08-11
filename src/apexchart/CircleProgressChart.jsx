@@ -1,6 +1,4 @@
-// import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
-
 const CircleProgressChart = () => {
   const series = [70];
   const options = {

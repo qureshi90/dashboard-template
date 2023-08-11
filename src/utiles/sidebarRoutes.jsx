@@ -17,7 +17,6 @@ import {
   faTableList,
   faTable,
   faHeadphones,
-  // faHandDots,
 } from "@fortawesome/free-solid-svg-icons";
 const sidebarRoutes = [
   {
@@ -49,7 +48,6 @@ const sidebarRoutes = [
   },
   {
     text: "AccountSeting",
-    // route: routes.ACCOUNTSETING,
     arrow: faChevronRight,
     icon: faFolderBlank,
     children: [
@@ -72,68 +70,57 @@ const sidebarRoutes = [
   },
   {
     text: "Authentications",
-    // route: routes.AUTHENTICATIONS,
     arrow: faChevronRight,
     icon: faUnlock,
   },
   {
     text: "Misc",
-    // route: routes.MISC,
     arrow: faChevronRight,
     icon: faCube,
   },
   {
     text: "Cards",
     route: routes.CARDS,
-    // arrow: faChevronRight,
     icon: faCarSide,
   },
   {
     text: "User Interface",
-    // route: routes.USERINTERFACE,
     arrow: faChevronRight,
     icon: faListUl,
   },
   {
     text: "Extended UI",
-    // route: routes.EXTENDEDUI,
     arrow: faChevronRight,
     icon: faClone,
   },
   {
     text: "Boxicons",
     route: routes.BOXICONS,
-    // arrow: faChevronRight,
     icon: faCrown,
   },
   {
     text: "Form Elements",
-    // route: routes.FORMELEMENTS,
     arrow: faChevronRight,
     icon: faTableCells,
   },
   {
     text: "Form Layout",
-    // route: routes.FORMLAYOUT,
     arrow: faChevronRight,
     icon: faTableList,
   },
   {
     text: "Table",
     route: routes.TABLE,
-    // arrow: faChevronRight,
     icon: faTable,
   },
   {
     text: "Support",
     route: routes.SUPPORT,
-    // arrow: faChevronRight,
     icon: faHeadphones,
   },
   {
     text: "Documentation",
     route: routes.DOCUMENTATION,
-    // arrow: faChevronRight,
     icon: faFile,
   },
 ];

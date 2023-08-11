@@ -37,7 +37,6 @@ const ColumnChart = () => {
     xaxis: {
       categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
       position: "bottom",
-      // offsetY: -20,
       axisBorder: {
         show: false,
       },
@@ -93,7 +92,6 @@ const ColumnChart = () => {
         series={series}
         type="bar"
         height={350}
-        // width={389}
       />
     </div>
   );

@@ -37,7 +37,6 @@ const Navbar = ({ setShow }) => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };

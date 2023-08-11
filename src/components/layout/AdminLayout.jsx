@@ -13,7 +13,6 @@ const AdminLayout = () => {
       <div
         className="lg:ml-64 border border-slate-800"
         style={{
-          // width: "calc(100% - 256px)",
           minHeight: "calc(100vh - 30px)",
         }}
       >

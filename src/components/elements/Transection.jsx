@@ -12,7 +12,6 @@ const Transection = ({
     <>
       <div className="p-6 w-52 shadow rounded-md bg-white flex-1">
         <FontAwesomeIcon
-          // onClick={toggleDropdown}
           className="float-right mt-2 mr-2 text-[#697A8D]"
           icon={ellipsisVertical}
         />
