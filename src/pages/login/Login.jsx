@@ -6,13 +6,26 @@ import Button from "../../components/elements/Button";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <>
-      <div className="bg-[#F5F5F9] h-screen flex items-center justify-center">
-        <div className="bg-white text-[#697a8d] shadow-md w-[400px]  p-5 rounded-lg">
-          <Logo />
-          <HeadingParagraph
-            heading="Welcome to Sneat! 👋"
-            paragraph="Please sign-in to your account and start the adventure"
+    <div className="bg-[#F5F5F9] h-screen flex items-center justify-center">
+      <div className="bg-white text-[#697a8d] shadow-md w-[400px]  p-5 rounded-lg">
+        <Logo />
+        <HeadingParagraph
+          heading="Welcome to Sneat! 👋"
+          paragraph="Please sign-in to your account and start the adventure"
+        />
+        <InputField
+          label="EMAIL OR USERNAME"
+          type="email"
+          placeholder="Enter your email or username"
+          htmlFor="email"
+        />
+        <HideShowPasswrod forgot="Forgot Password?" />
+        <div className="flex items-center mt-4 m-px">
+          <input
+            className="h-5 w-5 rounded-lg border border-blue-600"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
           />
           <InputField
             label="EMAIL OR USERNAME"
@@ -46,7 +59,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";
 import routes from "./utiles/routes";
-import AdminLayout from "./components/Layout/AdminLayout";
+import AdminLayout from "./components/layout/AdminLayout";
 import Cards from "./pages/Cards";
 import AccountSeting from "./pages/accountSetting/AccountSeting";
 import Layouts from "./pages/Layouts";

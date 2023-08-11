@@ -7,6 +7,8 @@ import profilepic from "./avatars/1.png";
 import chartSuccess from "./icons/unicons/chart-success.png";
 import walletInfo from "./icons/unicons/wallet-info.png";
 import manLaptop from "./illustrations/man-with-laptop-light.png";
+import paypal from "./icons/unicons/paypal.png";
+import primary from "./icons/unicons/cc-primary.png";
 export {
   favicon,
   Eye,
@@ -17,4 +19,6 @@ export {
   chartSuccess,
   walletInfo,
   manLaptop,
+  paypal,
+  primary,
 };

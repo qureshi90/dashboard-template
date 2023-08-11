@@ -5,3 +5,9 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (max-width: 375px) {
+  .chart {
+    width: 280px;
+  }
+}
