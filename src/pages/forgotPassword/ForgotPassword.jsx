@@ -1,7 +1,7 @@
 import Button from "../../components/elements/Button";
 import HeadingParagraph from "../../components/elements/HeadingParagraph";
 import InputField from "../../components/elements/InputField";
-import Logo from "../../components/elements/logo";
+import Logo from "../../components/elements/Logo";
 import { Link } from "react-router-dom";
 import { download, download1 } from "../../assets/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

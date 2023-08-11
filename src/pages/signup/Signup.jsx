@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import HideShowPasswrod from "../../components/Common/HideShowPasswrod";
+import HideShowPasswrod from "../../components/common/HideShowPasswrod";
 import Button from "../../components/elements/Button";
 import HeadingParagraph from "../../components/elements/HeadingParagraph";
 import InputField from "../../components/elements/InputField";
-import Logo from "../../components/elements/logo";
+import Logo from "../../components/elements/Logo";
 
 const Signup = () => {
   return (

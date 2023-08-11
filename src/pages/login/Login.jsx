@@ -1,4 +1,4 @@
-import Logo from "../../components/elements/logo";
+import Logo from "../../components/elements/Logo";
 import InputField from "../../components/elements/InputField";
 import HeadingParagraph from "../../components/elements/HeadingParagraph";
 import HideShowPasswrod from "../../components/common/HideShowPasswrod";
