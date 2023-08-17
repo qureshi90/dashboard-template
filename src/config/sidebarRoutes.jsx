@@ -32,17 +32,14 @@ const sidebarRoutes = [
       {
         text: "Dashboard",
         route: routes.LOGIN,
-        icon: faHouse,
       },
       {
         text: "Dashboard",
         route: routes.SIGNUP,
-        icon: faHouse,
       },
       {
         text: "Dashboard",
         route: routes.HOME,
-        icon: faHouse,
       },
     ],
   },
@@ -52,19 +49,16 @@ const sidebarRoutes = [
     icon: faFolderBlank,
     children: [
       {
-        text: "Dashboard",
-        route: routes.LOGIN,
-        icon: faHouse,
+        text: "Account",
+        route: routes.ACCOUNT,
       },
       {
-        text: "Dashboard",
-        route: routes.SIGNUP,
-        icon: faHouse,
+        text: "Notifications",
+        route: routes.NOTIFICATIONS,
       },
       {
-        text: "Dashboard",
-        route: routes.HOME,
-        icon: faHouse,
+        text: "Connections",
+        route: routes.CONNNECTIONS,
       },
     ],
   },
@@ -72,11 +66,35 @@ const sidebarRoutes = [
     text: "Authentications",
     arrow: faChevronRight,
     icon: faUnlock,
+    children: [
+      {
+        text: "Login",
+        route: routes.LOGIN,
+      },
+      {
+        text: "Register",
+        route: routes.SIGNUP,
+      },
+      {
+        text: "Forgot Password",
+        route: routes.FORGOT_PASSWORD,
+      },
+    ],
   },
   {
     text: "Misc",
     arrow: faChevronRight,
     icon: faCube,
+    children: [
+      {
+        text: "Error",
+        route: routes.ERROR,
+      },
+      {
+        text: "Under Maintenance",
+        route: routes.UNDERMAINTENANCE,
+      },
+    ],
   },
   {
     text: "Cards",

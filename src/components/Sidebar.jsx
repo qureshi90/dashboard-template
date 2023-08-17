@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { favicon } from "../assets/images";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { faCircleDot } from "@fortawesome/free-regular-svg-icons";
 
 const Item = ({ item }) => {
   const [rotate, setRotate] = useState(false);
@@ -13,11 +14,11 @@ const Item = ({ item }) => {
 
   return (
     <>
-      <li className="">
+      <li>
         <NavLink
           onClick={togglerArrow}
           className={
-            "mx-2 my-1( relative text-[#697a8d] p-2 font-normal flex items-center hover:bg-[#F8F8F9] h-11 w-60 rounded-lg"
+            "mx-2 my-1 relative text-[#697a8d] p-2 font-normal flex items-center hover:bg-[#F8F8F9] h-11 w-60 rounded-lg"
           }
           to={item.route}
         >
@@ -27,7 +28,7 @@ const Item = ({ item }) => {
           <span className="ml-5">{item.text}</span>
           <span>
             <FontAwesomeIcon
-              className={`h-3 w-3  absolute right-3 top-4 ${
+              className={`h-3 w-3 absolute right-3 top-4 ${
                 rotate
                   ? "rotate-90 ease-in duration-300"
                   : "ease-in duration-300"
@@ -45,7 +46,10 @@ const Item = ({ item }) => {
               key={index}
               to={item.route}
             >
-              <FontAwesomeIcon className="ml-5" icon={item.icon} />
+              <FontAwesomeIcon
+                className="ml-5 text-[#697a8d] h-3"
+                icon={faCircleDot}
+              />
               <p className="ml-5">{item?.text}</p>
             </NavLink>
           ))}
@@ -65,7 +69,7 @@ const Sidebar = ({ show, setShow }) => {
         ></div>
       ) : null}
       <div
-        className={`w-64 h-full lg:h-screen border bg-white shadow-md fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full  ${
+        className={`w-64 h-full lg:h-screen border bg-white shadow-md fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full ${
           show ? "max-lg:translate-x-0" : null
         }`}
       >
