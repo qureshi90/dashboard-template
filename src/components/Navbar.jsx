@@ -4,8 +4,8 @@ import { profilepic } from "../assets/images/";
 const Navbar = ({ setShow }) => {
   return (
     <>
-      <div className="flex items-center lg:ml-64 mt-4 rounded-lg ">
-        <div className="flex items-center justify-between md:w-full bg-white rounded-md p-4 mx-4 md:mx-8 xl:mx-20 shadow">
+      <div className="flex items-center lg:ml-64 mt-4 rounded-lg">
+        <div className="flex items-center justify-between md:w-full bg-white rounded-md p-4 mx-4 md:mx-8 xl:mx-10 shadow">
           <div className="flex items-center">
             <FontAwesomeIcon
               className="mr-3 text-[#697A8D] h-5  block lg:hidden"

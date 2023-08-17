@@ -36,8 +36,8 @@ const HomePage = () => {
   const [dropDown, setDropDown] = useState(false);
   const [isDropDown, setIsDropDown] = useState(false);
   return (
-    <div className="pt-8 mx-4 md:mx-8 xl:mx-20">
-      <div className="flex gap-7 flex-wrap">
+    <div className="pt-6 mx-4 md:mx-8 xl:mx-10">
+      <div className="flex gap-6 flex-wrap">
         <div className="flex-grow flex md:flex-row flex-col shadow rounded-xl bg-white">
           <div className="p-4  text-[#696CFF]">
             <p className=" text-lg ">Congratulations John! 🎉</p>
@@ -53,7 +53,7 @@ const HomePage = () => {
             <img className="h-40 w-40" src={manLaptop} alt="" />
           </div>
         </div>
-        <div className="flex  gap-7 flex-wrap max-xl:flex-grow">
+        <div className="flex gap-6 flex-wrap max-xl:flex-grow">
           <Transection
             ellipsisVertical={faEllipsisVertical}
             img={chartSuccess}
@@ -72,7 +72,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="mt-7 flex gap-7 flex-wrap">
+      <div className="mt-6 flex gap-6 flex-wrap">
         <div className="flex shadow bg-white lg:flex-1 flex-grow max-sm:flex-wrap justify-center rounded-xl">
           <ColumnChart />
           <div className="relative h-96 md:w-[360px] max-sm:flex-grow p-3">
@@ -114,7 +114,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="max-xl:flex-grow">
-          <div className="flex gap-7 flex-wrap">
+          <div className="flex gap-6 flex-wrap">
             <Transection
               ellipsisVertical={faEllipsisVertical}
               img={paypal}
@@ -133,7 +133,7 @@ const HomePage = () => {
               profit="+28.14%"
             />
           </div>
-          <div className="p-5 shadow-md  bg-white flex flex-wrap justify-between items-center mt-7 rounded-xl">
+          <div className="p-5 shadow-md  bg-white flex flex-wrap justify-between items-center mt-6 rounded-xl">
             <div className="max-sm:flex flex-wrap items-center">
               <h1 className="text-lg">Profile Report</h1>
               <br />
@@ -152,7 +152,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-7 mt-7  mb-3 flex-grow">
+      <div className="flex flex-wrap gap-6 mt-6 mb-6 flex-grow">
         <div className="bg-white lg:w-[460px] p-6 rounded-xl flex-1 shadow-md">
           <FontAwesomeIcon
             className="float-right mt-1 cursor-pointer py-1 px-2"
@@ -248,7 +248,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white lg:w-[445px] p-6 rounded-xl max-sm:flex-grow max-xl:flex-1 shadow-md">
+        <div className="bg-white lg:w-[440px] p-6 rounded-xl max-sm:flex-grow max-xl:flex-1 shadow-md">
           <FontAwesomeIcon
             className="float-right mt-1 cursor-pointer py-1 px-2"
             onClick={() => setIsDropDown(!isDropDown)}

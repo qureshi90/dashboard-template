@@ -11,7 +11,7 @@ const AdminLayout = () => {
       <Navbar setShow={setShow} />
       <Sidebar show={show} setShow={setShow} />
       <div
-        className="lg:ml-64 border border-slate-800"
+        className="lg:ml-64"
         style={{
           minHeight: "calc(100vh - 30px)",
         }}
