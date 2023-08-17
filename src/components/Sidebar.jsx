@@ -17,7 +17,7 @@ const Item = ({ item }) => {
         <NavLink
           onClick={togglerArrow}
           className={
-            "mx-2 my-1( relative text-[#697a8d] p-2 font-normal flex items-center hover:bg-[#F8F8F9] h-11 w-60 rounded-lg "
+            "mx-2 my-1( relative text-[#697a8d] p-2 font-normal flex items-center hover:bg-[#F8F8F9] h-11 w-60 rounded-lg"
           }
           to={item.route}
         >
@@ -60,7 +60,7 @@ const Sidebar = ({ show, setShow }) => {
     <>
       {show ? (
         <div
-          className="fixed h-full w-full top-0 left-0 flex items-center justify-center transition-transform bg-black bg-opacity-50 z-0"
+          className="fixed h-full w-full top-0 left-0 flex items-center justify-center transition-transform bg-black bg-opacity-50 z-10"
           onClick={() => setShow(false)}
         ></div>
       ) : null}

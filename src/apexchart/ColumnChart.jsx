@@ -10,6 +10,12 @@ const ColumnChart = () => {
 
   const options = {
     chart: {
+      toolbar: {
+        show: true,
+        tools: {
+          download: false, // <== line to add
+        },
+      },
       height: 350,
       type: "bar",
     },
@@ -86,7 +92,7 @@ const ColumnChart = () => {
   };
 
   return (
-    <div id="chart" className="border-r-slate-300 border  flex-grow chart">
+    <div id="chart" className="border-r-slate-300 border flex-grow columnchart">
       <ReactApexChart
         options={options}
         series={series}
