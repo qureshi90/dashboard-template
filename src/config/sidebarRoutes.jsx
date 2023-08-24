@@ -1,7 +1,7 @@
 import {
   faFile,
-  faFolder,
   faFolderBlank,
+  faSquare,
 } from "@fortawesome/free-regular-svg-icons";
 import routes from "./routes";
 import {
@@ -17,6 +17,7 @@ import {
   faTableList,
   faTable,
   faHeadphones,
+  faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
 const sidebarRoutes = [
   {
@@ -25,23 +26,14 @@ const sidebarRoutes = [
     icon: faHouse,
   },
   {
-    text: "Layouts",
-    arrow: faChevronRight,
-    icon: faFolder,
-    children: [
-      {
-        text: "Dashboard",
-        route: routes.LOGIN,
-      },
-      {
-        text: "Dashboard",
-        route: routes.SIGNUP,
-      },
-      {
-        text: "Dashboard",
-        route: routes.HOME,
-      },
-    ],
+    text: "Products",
+    route: routes.PRODUCTS,
+    icon: faIdCard,
+  },
+  {
+    text: "Orders",
+    route: routes.ORDERS,
+    icon: faSquare,
   },
   {
     text: "AccountSeting",

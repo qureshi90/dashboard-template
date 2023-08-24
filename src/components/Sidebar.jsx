@@ -11,7 +11,6 @@ const Item = ({ item }) => {
   const togglerArrow = () => {
     setRotate(!rotate);
   };
-
   return (
     <>
       <li>
@@ -64,12 +63,12 @@ const Sidebar = ({ show, setShow }) => {
     <>
       {show ? (
         <div
-          className="fixed h-full w-full top-0 left-0 flex items-center justify-center transition-transform bg-black bg-opacity-50 z-10"
+          className="overlay transition-transform bg-black bg-opacity-50 z-10"
           onClick={() => setShow(false)}
         ></div>
       ) : null}
       <div
-        className={`w-64 h-full lg:h-screen border bg-white shadow-md fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full ${
+        className={`w-64 h-full overflow-y-scroll sidebar lg:h-screen border bg-white shadow-lg fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full ${
           show ? "max-lg:translate-x-0" : null
         }`}
       >

@@ -15,6 +15,9 @@ import Notifications from "./pages/accountSetting/Notifications";
 import Connections from "./pages/accountSetting/Connections";
 import Error from "./pages/misc/Error";
 import UnderMaintenance from "./pages/misc/UnderMaintenance";
+import Products from "./pages/product/Products";
+import AddProduct from "./pages/product/AddProduct";
+import Orders from "./pages/Orders";
 function App() {
   return (
     <>
@@ -39,6 +42,9 @@ function App() {
             <Route exact path={routes.LOGIN} element={<Login />} />
             <Route exact path={routes.SIGNUP} element={<Signup />} />
             <Route exact path={routes.ACCOUNT} element={<Account />} />
+            <Route exact path={routes.PRODUCTS} element={<Products />} />
+            <Route exact path={routes.ADDPRODUCT} element={<AddProduct />} />
+            <Route exact path={routes.ORDERS} element={<Orders />} />
             <Route
               exact
               path={routes.NOTIFICATIONS}

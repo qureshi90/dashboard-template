@@ -1,5 +1,6 @@
 const routes = {
   HOME: "/",
+  PRODUCTS: "/products",
   CARDS: "/cards",
   BOXICONS: "/boxicons",
   TABLE: "/table",
@@ -13,26 +14,8 @@ const routes = {
   CONNNECTIONS: "/connections",
   ERROR: "/error",
   UNDERMAINTENANCE: "/undermaintenance",
-  // User InterFace DropDown Pages
-  ACCORDION: "/",
-  ALERTS: "/",
-  BADGES: "/",
-  BUTTONS: "/",
-  CAROUSEL: "/",
-  COLLAPSE: "/",
-  DROPDOWNS: "/",
-  FOOTER: "/",
-  LISTGROUPS: "/",
-  MODALS: "/",
-  NAVBAR: "/",
-  OFFCANVAS: "/",
-  PAGINATIONS: "/",
-  PROGRESS: "/",
-  SPINNERS: "/",
-  TABSANDPILLS: "/",
-  TOASTS: "/",
-  TOOLTIPANDPOPOVERS: "/",
-  TYPOGRAPHY: "/",
+  ADDPRODUCT: "/addproduct",
+  ORDERS: "/orders",
 };
 
 export default routes;

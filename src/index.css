@@ -6,6 +6,35 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* transition-transform z-10 */
+}
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+input[type="file"]::file-selector-button {
+  border: none;
+  height: 100%;
+  width: 100%;
+  background: white;
+  cursor: pointer;
+}
+input[type="file"]::file-selector-button:hover {
+  background: #694cff;
+  color: white;
+}
 @media only screen and (max-width: 375px) {
   .columnchart {
     width: 280px;
