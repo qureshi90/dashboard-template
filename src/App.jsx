@@ -17,7 +17,7 @@ import Error from "./pages/misc/Error";
 import UnderMaintenance from "./pages/misc/UnderMaintenance";
 import Products from "./pages/product/Products";
 import AddProduct from "./pages/product/AddProduct";
-import Orders from "./pages/Orders";
+import Orders from "./pages/orders/Orders";
 function App() {
   return (
     <>

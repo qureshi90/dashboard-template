@@ -1,0 +1,73 @@
+const OrderData = [
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+  {
+    id: "#1234",
+    date: "11-14-2023",
+    name: "T-shirt",
+    price: "1170",
+    status: "Delivered",
+  },
+];
+export default OrderData;
