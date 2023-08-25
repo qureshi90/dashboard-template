@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DropDown from "./DropDown";
+import DropDown from "../elements/DropDown";
 const Transection = ({
   text,
   money,

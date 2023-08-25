@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { Eye, slashEye } from "../../assets/images";
+import { eye, slashEye } from "../../assets/images";
 import { Link } from "react-router-dom";
 const HideShowPasswrod = (props) => {
   const [togglePassoword, setTogglePassword] = useState(true);
@@ -20,7 +20,7 @@ const HideShowPasswrod = (props) => {
       <div className="relative mt-3 mb-3">
         <img
           className="h-4 w-4  mt-3 absolute right-2 text-[#697a8d]"
-          src={togglePassoword ? Eye : slashEye}
+          src={togglePassoword ? eye : slashEye}
           alt=""
           onClick={() => setTogglePassword(!togglePassoword)}
         />

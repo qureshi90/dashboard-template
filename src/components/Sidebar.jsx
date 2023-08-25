@@ -1,4 +1,4 @@
-import sidebarRoutes from "../utiles/sidebarRoutes";
+import sidebarRoutes from "../config/sidebarRoutes";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { favicon } from "../assets/images";

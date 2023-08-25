@@ -20,17 +20,17 @@ import {
   warning,
 } from "../../assets/images";
 import { useState } from "react";
-import RedialBarChart from "../../apexchart/RedialBarChart";
-import Transection from "../../components/elements/Transection";
-import CircleProgressChart from "../../apexchart/CircleProgressChart";
-import ColumnChart from "../../apexchart/ColumnChart";
+import RedialBarChart from "../../components/apexchart/RedialBarChart";
+import Transection from "../../components/common/Transection";
+import CircleProgressChart from "../../components/apexchart/CircleProgressChart";
+import ColumnChart from "../../components/apexchart/ColumnChart";
 import DropDown from "../../components/elements/DropDown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OrderDetail from "../../components/elements/OrderDetail";
+import OrderDetail from "../../components/common/OrderDetail";
 import { faFutbol } from "@fortawesome/free-regular-svg-icons";
-import LineChart from "../../apexchart/LineChart.jsx";
-import DonutChart from "../../apexchart/DonutChart";
-import ZoomAbleChart from "../../apexchart/ZoomAbleChart";
+import LineChart from "../../components/apexchart/LineChart.jsx";
+import DonutChart from "../../components/apexchart/DonutChart";
+import ZoomAbleChart from "../../components/apexchart/ZoomAbleChart";
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropDown, setDropDown] = useState(false);

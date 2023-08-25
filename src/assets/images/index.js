@@ -1,5 +1,5 @@
 import favicon from "./favicon/favicon.ico";
-import Eye from "./icons/eye.svg";
+import eye from "./icons/eye.svg";
 import slashEye from "./icons/slashEye.svg";
 import download from "./download.svg";
 import download1 from "./download1.svg";
@@ -15,7 +15,7 @@ import warning from "./icons/unicons/cc-warning.png";
 import success from "./icons/unicons/cc-success.png";
 export {
   favicon,
-  Eye,
+  eye,
   slashEye,
   download,
   download1,
