@@ -17,7 +17,6 @@ import {
   faTableList,
   faTable,
   faHeadphones,
-  faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
 const sidebarRoutes = [
   {
@@ -28,7 +27,7 @@ const sidebarRoutes = [
   {
     text: "Products",
     route: routes.PRODUCTS,
-    icon: faIdCard,
+    icon: faCube,
   },
   {
     text: "Orders",
