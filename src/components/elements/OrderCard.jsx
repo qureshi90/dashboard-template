@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const OrderCard = ({
   orderHeading,
-  orderQunatity,
+  orderQuantity,
   orderPercentage,
   backgroundColor,
   orderIcon,
@@ -17,9 +17,9 @@ const OrderCard = ({
         <p
           className={`text-2xl font-bold ${quantityColor} border-r-2 border-slate-500 w-16`}
         >
-          {orderQunatity}
+          {orderQuantity}
         </p>
-        <span className="ml-4">Immpression </span>
+        <span className="ml-4">Impression </span>
         <span className="ml-4">{orderPercentage}</span>
         <FontAwesomeIcon className={`ml-2 ${arrowColor}`} icon={orderIcon} />
       </div>

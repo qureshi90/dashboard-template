@@ -1,31 +1,48 @@
-import Login from "./pages/login/Login";
-import Signup from "./pages/signup/Signup";
-import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/homePage/HomePage";
-import routes from "./utiles/routes";
+import routes from "./config/routes";
 import AdminLayout from "./components/layout/AdminLayout";
-import Cards from "./pages/Cards";
-import Boxicons from "./pages/Boxicons.jsx";
-import Table from "./pages/Table";
-import Support from "./pages/Support";
-import Documentation from "./pages/Documentation";
-import Account from "./pages/accountSetting/Account";
-import Notifications from "./pages/accountSetting/Notifications";
-import Connections from "./pages/accountSetting/Connections";
-import Error from "./pages/misc/Error";
-import UnderMaintenance from "./pages/misc/UnderMaintenance";
-import Products from "./pages/product/Products";
-import AddProduct from "./pages/product/AddProduct";
-import Orders from "./pages/orders/Orders";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Login from "./pages/login/Login";
+// import Signup from "./pages/signup/Signup";
+// import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
+// import HomePage from "./pages/homePage/HomePage";
+// import Cards from "./pages/Cards";
+// import Boxicons from "./pages/Boxicons.jsx";
+// import Table from "./pages/Table";
+// import Support from "./pages/Support";
+// import Documentation from "./pages/Documentation";
+// import Account from "./pages/accountSetting/Account";
+// import Notifications from "./pages/accountSetting/Notifications";
+// import Connections from "./pages/accountSetting/Connections";
+// import Error from "./pages/misc/Error";
+// import UnderMaintenance from "./pages/misc/UnderMaintenance";
+// import Products from "./pages/product/Products";
+// import AddProduct from "./pages/product/AddProduct";
+// import Orders from "./pages/orders/Orders";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route element={<AdminLayout />}>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                exact
+                path={route.Path}
+                element={route.Element}
+              >
+                {route.children?.map((childRoute, index) => (
+                  <Route
+                    exact
+                    key={index}
+                    path={childRoute.Path}
+                    element={childRoute.Element}
+                  />
+                ))}
+              </Route>
+            ))}
+            {/* <Route exact path={routes.CARDS} element={<Cards />} />
             <Route exact path={routes.HOME} element={<HomePage />} />
-            <Route exact path={routes.CARDS} element={<Cards />} />
             <Route exact path={routes.BOXICONS} element={<Boxicons />} />
             <Route exact path={routes.TABLE} element={<Table />} />
             <Route exact path={routes.SUPPORT} element={<Support />} />
@@ -56,7 +73,7 @@ function App() {
               exact
               path={routes.UNDERMAINTENANCE}
               element={<UnderMaintenance />}
-            />
+            /> */}
           </Route>
         </Routes>
       </BrowserRouter>

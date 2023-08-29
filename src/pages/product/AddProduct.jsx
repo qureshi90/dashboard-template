@@ -1,6 +1,6 @@
 const AddProduct = () => {
   return (
-    <div className="flex justify-center items-center mx-auto z-10 flex-grow">
+    <div className="flex justify-center items-center mx-auto z-30 flex-grow">
       <div className="flex flex-col xl:w-[500px] bg-white p-4 rounded-lg shadow-lg fixed top-5">
         <label className="">Name</label>
         <input

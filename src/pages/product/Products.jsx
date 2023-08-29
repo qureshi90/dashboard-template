@@ -6,10 +6,7 @@ const Products = () => {
   return (
     <>
       {showModal ? (
-        <div
-          className="overlay transition-transform bg-black bg-opacity-50 z-10"
-          onClick={() => setShowModal(false)}
-        ></div>
+        <div className="overlay z-30" onClick={() => setShowModal(false)}></div>
       ) : null}
 
       <div className="mx-4 md:mx-8 xl:mx-10 flex flex-wrap gap-6 mt-6 mb-5 justify-between">
@@ -23,7 +20,7 @@ const Products = () => {
             <p className="text-lg mt-2 text-[#F59187] px-2">
               Rs.<b>{item.price}</b>
             </p>
-            <p className="text-sm my-1 mx-2">{item.descrpption}</p>
+            <p className="text-sm my-1 mx-2">{item.description}</p>
           </div>
         ))}
         <div className="flex w-full justify-end relative">

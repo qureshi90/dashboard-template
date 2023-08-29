@@ -5,7 +5,7 @@ import Logo from "../../components/elements/Logo";
 import { Link } from "react-router-dom";
 import { download, download1 } from "../../assets/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "../../assets/images/icons";
 const ForgotPassword = () => {
   return (
     <>

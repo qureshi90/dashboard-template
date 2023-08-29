@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DropDown from "../elements/DropDown";
-const Transection = ({
+const Transaction = ({
   text,
   money,
   img,
@@ -41,4 +41,4 @@ const Transection = ({
   );
 };
 
-export default Transection;
+export default Transaction;

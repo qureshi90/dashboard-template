@@ -1,36 +1,21 @@
-import {
-  faArrowUp,
-  faEllipsisVertical,
-  faChevronDown,
-  faChevronUp,
-  faDollar,
-  faMobile,
-  faPersonHalfDress,
-  faHouse,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  chartSuccess,
-  walletInfo,
-  manLaptop,
-  paypal,
-  primary,
-  wellte,
-  success,
-  chart,
-  warning,
-} from "../../assets/images";
+import * as icons from "../../assets/images/icons";
+import * as images from "../../assets/images";
 import { useState } from "react";
 import RedialBarChart from "../../components/apexchart/RedialBarChart";
-import Transection from "../../components/common/Transection";
+import Transaction from "../../components/common/Transaction";
 import CircleProgressChart from "../../components/apexchart/CircleProgressChart";
 import ColumnChart from "../../components/apexchart/ColumnChart";
 import DropDown from "../../components/elements/DropDown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OrderDetail from "../../components/common/OrderDetail";
-import { faFutbol } from "@fortawesome/free-regular-svg-icons";
 import LineChart from "../../components/apexchart/LineChart.jsx";
 import DonutChart from "../../components/apexchart/DonutChart";
 import ZoomAbleChart from "../../components/apexchart/ZoomAbleChart";
+import {
+  orderDetail,
+  transactionDetail,
+  companyGrowth,
+} from "../../constant/orderDetail";
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropDown, setDropDown] = useState(false);
@@ -50,22 +35,22 @@ const HomePage = () => {
             </button>
           </div>
           <div className="flex items-end justify-center px-3 pt-3 md:w-full">
-            <img className="h-40 w-40" src={manLaptop} alt="" />
+            <img className="h-40 w-40" src={images.manLaptop} alt="" />
           </div>
         </div>
         <div className="flex gap-6 flex-wrap max-xl:flex-grow">
-          <Transection
-            ellipsisVertical={faEllipsisVertical}
-            img={chartSuccess}
-            icon={faArrowUp}
+          <Transaction
+            ellipsisVertical={icons.faEllipsisVertical}
+            img={images.chartSuccess}
+            icon={icons.faArrowUp}
             text="Profit"
             money="$12,628"
             profit="+72.80%"
           />
-          <Transection
-            ellipsisVertical={faEllipsisVertical}
-            img={walletInfo}
-            icon={faArrowUp}
+          <Transaction
+            ellipsisVertical={icons.faEllipsisVertical}
+            img={images.walletInfo}
+            icon={icons.faArrowUp}
             text="Sales"
             money="$4,679"
             profit="+28.42%"
@@ -82,7 +67,10 @@ const HomePage = () => {
                 className="hover:bg-[#5F61E6] border flex items-center px-3 mt-3 border-[#5F61E6] text-[#5F61E6] hover:text-white rounded"
               >
                 2021
-                <FontAwesomeIcon className="h-3 ml-2" icon={faChevronDown} />
+                <FontAwesomeIcon
+                  className="h-3 ml-2"
+                  icon={icons.faChevronDown}
+                />
               </button>
             </div>
             <DropDown
@@ -99,35 +87,34 @@ const HomePage = () => {
               62% Company Growth
             </p>
             <div className="flex mt-7 justify-between">
-              <OrderDetail
-                paddingLeftRight="px-[14px]"
-                icon={faDollar}
-                orderTeype="2022"
-                detail="$32.5k"
-              />
-              <OrderDetail
-                orderTeype="2021"
-                detail="$41.33k"
-                image={walletInfo}
-              />
+              {companyGrowth.map((item, index) => (
+                <OrderDetail
+                  key={index}
+                  paddingLeftRight={item.paddingLeftRight}
+                  icon={item.icon}
+                  orderType={item.orderType}
+                  detail={item.detail}
+                  image={item.image}
+                />
+              ))}
             </div>
           </div>
         </div>
         <div className="max-xl:flex-grow">
           <div className="flex gap-6 flex-wrap">
-            <Transection
-              ellipsisVertical={faEllipsisVertical}
-              img={paypal}
-              icon={faArrowUp}
+            <Transaction
+              ellipsisVertical={icons.faEllipsisVertical}
+              img={images.paypal}
+              icon={icons.faArrowUp}
               text="Payments"
               money="  $2,456"
               profit="-14.82%"
               isRed={true}
             />
-            <Transection
-              ellipsisVertical={faEllipsisVertical}
-              img={primary}
-              icon={faArrowUp}
+            <Transaction
+              ellipsisVertical={icons.faEllipsisVertical}
+              img={images.primary}
+              icon={icons.faArrowUp}
               text="Transactions"
               money="$14,857"
               profit="+28.14%"
@@ -141,7 +128,10 @@ const HomePage = () => {
                 YEAR 2021
               </button>
               <p className="mt-4 flex items-center text-green-500">
-                <FontAwesomeIcon className="h-3 mr-1" icon={faChevronUp} />
+                <FontAwesomeIcon
+                  className="h-3 mr-1"
+                  icon={icons.faChevronUp}
+                />
                 <span>68.2%</span>
               </p>
               <h1 className="text-2xl text-[#566A7F]">$84,686k</h1>
@@ -157,7 +147,7 @@ const HomePage = () => {
           <FontAwesomeIcon
             className="float-right mt-1 cursor-pointer py-1 px-2"
             onClick={() => setDropDown(!dropDown)}
-            icon={faEllipsisVertical}
+            icon={icons.faEllipsisVertical}
           />
           <div className="float-right mr-40 mt-6">
             <DropDown
@@ -180,38 +170,18 @@ const HomePage = () => {
             </div>
           </div>
           <div className="mt-3">
-            <OrderDetail
-              icon={faMobile}
-              orderTeype="Electronic"
-              detail="Mobile, Earbuds, TV"
-              orderQuntity="82.5k"
-            />
-            <OrderDetail
-              backGroundColor="bg-[#E8FADF]"
-              color="text-[#71DD37]"
-              icon={faPersonHalfDress}
-              orderTeype="Fashion"
-              detail="T-shirt, Jeans, Shoes"
-              orderQuntity="23.8k"
-            />
-            <OrderDetail
-              paddingLeftRight="px-[12px]"
-              backGroundColor="bg-[#D7F5FC]"
-              color="text-[#0DC5ED]"
-              icon={faHouse}
-              orderTeype="Decor"
-              detail=" Fine Art, Dining"
-              orderQuntity="849k"
-            />
-            <OrderDetail
-              backGroundColor="bg-[#EBEEF0]"
-              color="text-[#8996A6]"
-              paddingLeftRight="px-[14px]"
-              icon={faFutbol}
-              orderTeype="Sports"
-              detail="Football, Cricket Kit"
-              orderQuntity="99"
-            />
+            {orderDetail.map((item, index) => (
+              <OrderDetail
+                key={index}
+                icon={item.icon}
+                orderType={item.orderType}
+                detail={item.detail}
+                orderQuantity={item.orderQuantity}
+                backGroundColor={item.backGroundColor}
+                color={item.color}
+                paddingLeftRight={item.paddingLeftRight}
+              />
+            ))}
           </div>
         </div>
         <div className="bg-white lg:w-[460px] p-6 rounded-xl flex-1 shadow-md">
@@ -226,13 +196,13 @@ const HomePage = () => {
           </button>
           <div className="flex items-end mt-5">
             <OrderDetail
-              image={wellte}
+              image={images.wellte}
               paddingLeftRight="px-[14px]"
-              orderTeype="Total Balance"
+              orderType="Total Balance"
               detail="$459.10"
             />
             <span className="-ml-10 text-[#71DD37]">
-              <FontAwesomeIcon className="h-3 mr-2" icon={faChevronUp} />
+              <FontAwesomeIcon className="h-3 mr-2" icon={icons.faChevronUp} />
               <span className="text-sm">42.9%</span>
             </span>
           </div>
@@ -252,7 +222,7 @@ const HomePage = () => {
           <FontAwesomeIcon
             className="float-right mt-1 cursor-pointer py-1 px-2"
             onClick={() => setIsDropDown(!isDropDown)}
-            icon={faEllipsisVertical}
+            icon={icons.faEllipsisVertical}
           />
           <div className="float-right mr-40 mt-4">
             <DropDown
@@ -265,42 +235,15 @@ const HomePage = () => {
           </div>
           <h1 className="text-xl">Transactions</h1>
           <div className="mt-3">
-            <OrderDetail
-              image={paypal}
-              orderTeype="Paypal"
-              detail="Send money"
-              orderQuntity="+82.6 USD"
-            />
-            <OrderDetail
-              orderTeype="Wallet"
-              detail=""
-              orderQuntity="+270.69 USD"
-              image={wellte}
-            />
-            <OrderDetail
-              orderTeype="Transfer"
-              detail="Refund"
-              orderQuntity="+637.91 USD"
-              image={chart}
-            />
-            <OrderDetail
-              image={success}
-              orderTeype="Credit Card"
-              detail="Ordered Food"
-              orderQuntity="-838.71 USD"
-            />
-            <OrderDetail
-              image={wellte}
-              orderTeype="Wallet"
-              detail="Starbucks"
-              orderQuntity="+203.33 USD"
-            />
-            <OrderDetail
-              image={warning}
-              orderTeype="Mastercard"
-              detail="Ordered Food"
-              orderQuntity=" -92.45 USD"
-            />
+            {transactionDetail.map((item, index) => (
+              <OrderDetail
+                key={index}
+                image={item.image}
+                orderType={item.orderType}
+                detail={item.detail}
+                orderQuantity={item.orderQuantity}
+              />
+            ))}
           </div>
         </div>
       </div>

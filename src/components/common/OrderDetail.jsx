@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 const OrderDetail = ({
   icon,
-  orderTeype,
+  orderType,
   detail,
-  orderQuntity,
+  orderQuantity,
   backGroundColor,
   color,
   paddingLeftRight,
@@ -29,13 +29,13 @@ const OrderDetail = ({
           )}
         </span>
         <div className="ml-2">
-          <span className="text-[#6C7D8F] font-medium">{orderTeype}</span>
+          <span className="text-[#6C7D8F] font-medium">{orderType}</span>
           <br />
           <span className="text-[#566A7F] text-sm font-normal">{detail}</span>
         </div>
       </div>
       <div className="flex text-[#6C7D8F]">
-        <p>{orderQuntity}</p>
+        <p>{orderQuantity}</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HideShowPasswrod from "../../components/common/HideShowPasswrod";
+import HideShowPassword from "../../components/common/HideShowPassword";
 import Button from "../../components/elements/Button";
 import HeadingParagraph from "../../components/elements/HeadingParagraph";
 import InputField from "../../components/elements/InputField";
@@ -27,7 +27,7 @@ const Signup = () => {
             placeholder="Enter your email"
             htmlFor="email"
           />
-          <HideShowPasswrod />
+          <HideShowPassword />
           <div className="flex items-center mt-4 m-px">
             <input
               className="h-5 w-5 focus:border-[#788FFF] rounded-lg border"
