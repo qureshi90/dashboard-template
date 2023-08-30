@@ -1,5 +1,4 @@
 import AddProduct from "./AddProduct";
-import ProductData from "./ProductData";
 import { useState, useEffect } from "react";
 const Products = () => {
   const [showModal, setShowModal] = useState();
