@@ -28,6 +28,8 @@ import {
   faPersonHalfDress,
   faHouse,
   faShoppingCart,
+  faSearch,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFile,
@@ -37,6 +39,8 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 
 export {
+  faSearch,
+  faStar,
   faShoppingCart,
   faArrowUp,
   faEllipsisVertical,

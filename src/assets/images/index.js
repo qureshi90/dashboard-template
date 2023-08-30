@@ -13,16 +13,6 @@ import wellte from "./icons/unicons/wallet.png";
 import chart from "./icons/unicons/chart.png";
 import warning from "./icons/unicons/cc-warning.png";
 import success from "./icons/unicons/cc-success.png";
-import jackett from "./backgrounds/jacket.jpg";
-import laptop from "./backgrounds/laptop.jpg";
-import samsunglcd from "./backgrounds/samsunglcd.jpg";
-import sanDisk from "./backgrounds/sanDisk.jpg";
-import shirt from "./backgrounds/shirt.jpg";
-import shirtandshoes from "./backgrounds/shirtandshoes.jpg";
-import SlimFit from "./backgrounds/SlimFit.jpg";
-import shoes from "./backgrounds/shoes.webp";
-import PUMA from "./backgrounds/PUMA.webp";
-import laptop1 from "./backgrounds/laptop1.jpeg";
 export {
   favicon,
   eye,
@@ -39,14 +29,4 @@ export {
   chart,
   warning,
   success,
-  jackett,
-  samsunglcd,
-  laptop,
-  sanDisk,
-  shirt,
-  shirtandshoes,
-  SlimFit,
-  shoes,
-  PUMA,
-  laptop1,
 };
