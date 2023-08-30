@@ -4,6 +4,7 @@ import Products from "../pages/product/Products";
 import Login from "../pages/login/Login";
 import Signup from "../pages/signup/Signup";
 import ForgotPassword from "../pages/forgotPassword/ForgotPassword";
+import Error from "../pages/misc/Error";
 import * as icons from "../assets/images/icons";
 const routes = [
   { Path: "/", Element: <HomePage />, text: "Dashboard", icon: icons.faHouse },
@@ -48,6 +49,7 @@ const routes = [
     children: [
       {
         Path: "/error",
+        Element: <Error />,
         text: "Error",
       },
       {

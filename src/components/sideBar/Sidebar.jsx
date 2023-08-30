@@ -13,11 +13,11 @@ const Item = ({ item }) => {
   };
   return (
     <>
-      <li>
+      <li className="mx-2 rounded-lg first:text-[#6C6FFF] first:bg-[#E7E7FF] text-[#697a8d] hover:bg-[#F8F8F9] first:hover:bg-[#E7E7FF]">
         <NavLink
           onClick={togglerArrow}
           className={
-            "mx-2 my-1 relative text-[#697a8d] p-2 font-normal flex items-center hover:bg-[#F8F8F9] h-11 w-60 rounded-lg"
+            "my-1 relative p-2 font-normal flex items-center  h-11 w-60 "
           }
           to={item.Path}
         >
