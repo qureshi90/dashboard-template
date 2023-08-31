@@ -62,10 +62,7 @@ const Sidebar = ({ show, setShow }) => {
   return (
     <>
       {show ? (
-        <div
-          className="overlay transition-transform bg-black bg-opacity-50 z-10"
-          onClick={() => setShow(false)}
-        ></div>
+        <div className="overlay z-10" onClick={() => setShow(false)}></div>
       ) : null}
       <div
         className={`w-64 h-full overflow-y-scroll sidebar lg:h-screen border bg-white shadow-lg fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full ${
