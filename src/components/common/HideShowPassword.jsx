@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { eye, slashEye } from "../../assets/images";
 import { Link } from "react-router-dom";
-const HideShowPasswrod = (props) => {
-  const [togglePassoword, setTogglePassword] = useState(true);
+const HideShowPassword = (props) => {
+  const [togglePassword, setTogglePassword] = useState(true);
   return (
     <>
       <div className="flex items-center justify-between">
@@ -20,13 +20,13 @@ const HideShowPasswrod = (props) => {
       <div className="relative mt-3 mb-3">
         <img
           className="h-4 w-4  mt-3 absolute right-2 text-[#697a8d]"
-          src={togglePassoword ? eye : slashEye}
+          src={togglePassword ? eye : slashEye}
           alt=""
-          onClick={() => setTogglePassword(!togglePassoword)}
+          onClick={() => setTogglePassword(!togglePassword)}
         />
         <input
           className="w-full h-10 text-lg pl-3 m-px border-gray-300 border outline-none focus:border-[#696CFF] rounded-md"
-          type={togglePassoword ? "text" : "password"}
+          type={togglePassword ? "text" : "password"}
           name="password"
           placeholder="........."
         />
@@ -35,4 +35,4 @@ const HideShowPasswrod = (props) => {
   );
 };
 
-export default HideShowPasswrod;
+export default HideShowPassword;

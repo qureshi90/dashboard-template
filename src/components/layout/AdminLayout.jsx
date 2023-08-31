@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Sidebar from "../Sidebar";
+import Sidebar from "../sideBar/Sidebar";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { Outlet } from "react-router-dom";

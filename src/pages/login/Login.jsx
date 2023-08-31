@@ -1,7 +1,7 @@
 import Logo from "../../components/elements/Logo";
 import InputField from "../../components/elements/InputField";
 import HeadingParagraph from "../../components/elements/HeadingParagraph";
-import HideShowPasswrod from "../../components/common/HideShowPasswrod";
+import HideShowPassword from "../../components/common/HideShowPassword";
 import Button from "../../components/elements/Button";
 import { Link } from "react-router-dom";
 const Login = () => {
@@ -19,7 +19,7 @@ const Login = () => {
           placeholder="Enter your email or username"
           htmlFor="email"
         />
-        <HideShowPasswrod forgot="Forgot Password?" />
+        <HideShowPassword forgot="Forgot Password?" />
         <div className="flex items-center mt-4 m-px">
           <input
             className="h-5 w-5 rounded-lg border border-blue-600"
