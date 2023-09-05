@@ -1,10 +1,10 @@
 import routes from "../../config/routes";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { favicon } from "../../assets/images";
+import { favicon } from "../../assets";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { faCircleDot } from "../../assets/images/icons";
+import { faCircleDot } from "../../assets/icons";
 
 const Item = ({ item }) => {
   const [rotate, setRotate] = useState(false);

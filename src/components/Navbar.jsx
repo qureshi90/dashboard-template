@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faStar, faBars } from "../assets/images/icons";
-import { profilepic } from "../assets/images/";
+import { faSearch, faStar, faBars } from "../assets/icons";
+import { profilepic } from "../assets";
 const Navbar = ({ setShow }) => {
   return (
     <>

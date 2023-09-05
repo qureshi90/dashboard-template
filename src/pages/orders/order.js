@@ -1,4 +1,5 @@
-import * as icon from "../assets/images/icons";
+import * as icon from "../../assets/icons";
+
 const order = [
   {
     orderHeading: "New Orders",

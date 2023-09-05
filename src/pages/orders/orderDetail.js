@@ -1,5 +1,5 @@
-import * as icons from "../assets/images/icons";
-import * as images from "../assets/images";
+import * as icons from "../../assets/icons";
+import * as images from "../../assets";
 const orderDetail = [
   {
     icon: icons.faMobile,
