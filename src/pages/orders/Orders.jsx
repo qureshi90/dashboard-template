@@ -1,5 +1,5 @@
-import order from "../../constant/order";
-import * as icon from "../../assets/images/icons";
+import order from "./order";
+import * as icon from "../../assets/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OrderCard from "../../components/elements/OrderCard";
 import OrderData from "./OrderData";

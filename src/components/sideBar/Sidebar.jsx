@@ -1,10 +1,10 @@
 import routes from "../../config/routes";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { favicon } from "../../assets/images";
+import { favicon } from "../../assets";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { faCircleDot } from "../../assets/images/icons";
+import { faCircleDot } from "../../assets/icons";
 
 const Item = ({ item }) => {
   const [rotate, setRotate] = useState(false);
@@ -62,10 +62,7 @@ const Sidebar = ({ show, setShow }) => {
   return (
     <>
       {show ? (
-        <div
-          className="overlay transition-transform bg-black bg-opacity-50 z-10"
-          onClick={() => setShow(false)}
-        ></div>
+        <div className="overlay z-10" onClick={() => setShow(false)}></div>
       ) : null}
       <div
         className={`w-64 h-full overflow-y-scroll sidebar lg:h-screen border bg-white shadow-lg fixed top-0 left-0 z-30 max-lg:transition-transform max-lg:-translate-x-full ${

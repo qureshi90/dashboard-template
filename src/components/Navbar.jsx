@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faStar, faBars } from "../assets/images/icons";
-import { profilepic } from "../assets/images/";
+import { faSearch, faStar, faBars } from "../assets/icons";
+import { profilepic } from "../assets";
 const Navbar = ({ setShow }) => {
   return (
     <>
@@ -8,7 +8,7 @@ const Navbar = ({ setShow }) => {
         <div className="flex items-center justify-between md:w-full bg-white rounded-md p-4 mx-4 md:mx-8 xl:mx-10 shadow">
           <div className="flex items-center">
             <FontAwesomeIcon
-              className="mr-3 text-[#697A8D] h-5  block lg:hidden"
+              className="mr-3 text-[#697A8D] h-5 block lg:hidden"
               icon={faBars}
               onClick={() => setShow(true)}
             />

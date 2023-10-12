@@ -3,9 +3,9 @@ import HeadingParagraph from "../../components/elements/HeadingParagraph";
 import InputField from "../../components/elements/InputField";
 import Logo from "../../components/elements/Logo";
 import { Link } from "react-router-dom";
-import { download, download1 } from "../../assets/images";
+import { download, download1 } from "../../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "../../assets/images/icons";
+import { faChevronLeft } from "../../assets/icons";
 const ForgotPassword = () => {
   return (
     <>

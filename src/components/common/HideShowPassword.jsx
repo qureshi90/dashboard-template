@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { eye, slashEye } from "../../assets/images";
+import { eye, slashEye } from "../../assets";
 import { Link } from "react-router-dom";
 const HideShowPassword = (props) => {
   const [togglePassword, setTogglePassword] = useState(true);

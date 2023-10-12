@@ -1,5 +1,6 @@
-import * as icons from "../../assets/images/icons";
-import * as images from "../../assets/images";
+
+import * as icons from "../../assets/icons";
+import * as images from "../../assets";
 import { useState } from "react";
 import RedialBarChart from "../../components/apexchart/RedialBarChart";
 import Transaction from "../../components/common/Transaction";
@@ -15,7 +16,7 @@ import {
   orderDetail,
   transactionDetail,
   companyGrowth,
-} from "../../constant/orderDetail";
+} from "../orders/orderDetail";
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropDown, setDropDown] = useState(false);
